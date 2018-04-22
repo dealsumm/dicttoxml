@@ -134,6 +134,7 @@ def make_valid_xml_name(key, attr):
     LOG.info('Inside make_valid_xml_name(). Testing key "%s" with attr "%s"' % (
         unicode_me(key), unicode_me(attr))
     )
+    key = str(key)
     key = escape_xml(key)
     attr = escape_xml(attr)
     
